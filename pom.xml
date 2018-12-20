@@ -53,6 +53,18 @@
                     <update>true</update>
                     <path>/myDemo</path>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-source</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>deploy-only</goal>
+                        </goals>
+                        <configuration>
+                            <!-- 插件具体目标任务参数配置-->
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
         </plugins>
